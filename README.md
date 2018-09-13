@@ -1,3 +1,3 @@
-h2 sweater
+sweater
 ---
 Spring Boot learning
