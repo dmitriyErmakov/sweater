@@ -4,7 +4,7 @@
 <@c.page>
 <div>
     Add new user
-
+    <#if message??>${message}</#if>
 </div>
 <@l.login "/registration" />
 </@c.page>
