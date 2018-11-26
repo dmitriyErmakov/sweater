@@ -3,9 +3,9 @@
 
 <@c.page>
 <div>
-    Add new user
+    <div class="mb-1">Add new user</div>
     <#if message??>${message}</#if>
 </div>
-<@l.login "/registration" />
+    <@l.login "/registration" true />
 </@c.page>
 
