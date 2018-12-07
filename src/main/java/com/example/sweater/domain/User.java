@@ -19,9 +19,6 @@ public class User implements UserDetails {
     private String username;
     @NotBlank(message = "Password cannot be empty")
     private String password;
-    @Transient
-    @NotBlank(message = "Password confirmation cannot be empty")
-    private String passwordConf;
     private boolean isActive;
 
     @Email(message = "Email is not correct")
@@ -87,14 +84,6 @@ public class User implements UserDetails {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getPasswordConf() {
-        return passwordConf;
-    }
-
-    public void setPasswordConf(String passwordConf) {
-        this.passwordConf = passwordConf;
     }
 
     public boolean isActive() {
